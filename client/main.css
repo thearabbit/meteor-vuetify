@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+}
+
+form label.error {
+    display: block;
+    font-weight: normal;
+    color: red;
+}
+
+.section-header {
+    letter-spacing: 2px;
+    text-align: left !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding-bottom: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-header:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+}

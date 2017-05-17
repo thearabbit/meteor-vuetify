@@ -1,0 +1,24 @@
+{
+  "name": "meteor-vue2-example",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "bcrypt": "^1.0.2",
+    "jquery-validation": "^1.16.0",
+    "lodash": "^4.17.4",
+    "meteor-node-stubs": "^0.2.6",
+    "moment": "^2.18.1",
+    "simpl-schema": "^0.2.3",
+    "vee-validate": "^2.0.0-rc.3",
+    "vue": "^2.3.3",
+    "vue-meteor-tracker": "^1.2.1",
+    "vue-router": "^2.5.3",
+    "vuetify": "^0.11.1",
+    "vuex": "^2.3.1",
+    "vuex-router-sync": "^4.1.2"
+  },
+  "devDependencies": {}
+}
