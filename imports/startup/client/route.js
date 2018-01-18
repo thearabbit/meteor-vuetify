@@ -1,25 +1,28 @@
 // Libs
-import {Meteor} from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import Vue from 'vue';
+
 import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
 import VueMeteorTracker from 'vue-meteor-tracker';
+Vue.use(VueMeteorTracker);
+
 import Vuetify from 'vuetify/dist/vuetify.js';
 import 'vuetify/dist/vuetify.min.css';
-import VeeValidate from 'vee-validate';
-import 'jquery-validation';
-
-Vue.use(VueRouter);
-Vue.use(VueMeteorTracker);
 Vue.use(Vuetify);
+
+import VeeValidate from 'vee-validate';
 Vue.use(VeeValidate);
 
 // Main app
-import AppLayout from '/imports/ui/AppLayout.vue';
-import Home from '/imports/ui/Home.vue';
-import Post from '/imports/ui/Post.vue';
-import PostNew from '/imports/ui/PostNew.vue';
+import AppLayout from '../../client/layouts/AppLayout.vue';
+import Home from '../../client/Home.vue';
+import Post from '../../client/Post.vue';
+import PostNew from '../../client/PostNew.vue';
 
 const router = new VueRouter({
+    mode: 'history',    
     routes: [
         {
             path: '/',
